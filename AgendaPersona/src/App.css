@@ -43,14 +43,26 @@
 
 
 .p5 {
+  --primary_color: #e60033;
   color: #e60033;
+  background-color:#e60033 ;
   /* primary: #e60033; */
 }
 .p4 {
+  --primary_color: #ffcc00;
   color: #ffcc00;
+  background-color:#ffcc00 ;
   /* primary: #ffcc00; */
 }
 .p3 {
+  --primary_color: #007acc;
   color: #007acc;
+  background-color:#007acc ;
   /* primary: #007acc; */
+}
+.p6 {
+  --primary_color: #166103;
+  color: #166103;
+  background-color:#166103 ;
+  /* primary: #33ff00; */
 }

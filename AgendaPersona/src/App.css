@@ -1,9 +1,43 @@
 #root {
   max-width: 1280px;
+  max-height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
+  --cor_de_fundo: #262525;
+
+
 }
+:root.p6 {
+  --primary_color: #24b600;
+  --secondary_color: #072300;
+  --cor_da_fonte: #e0e0e0;
+}
+
+:root.p5 {
+  --primary_color: #e60033;
+  --secondary_color: #540012;
+}
+:root.p4 {
+  --primary_color: #ffcc00;
+  --secondary_color: #4b3c00;
+}
+:root.p3 {
+  --primary_color: #007acc;
+  --secondary_color: #002137;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  html{
+    color-scheme: light;
+  }
+}
+
 
 .logo {
   height: 6em;
@@ -41,30 +75,41 @@
   color: #888;
 }
 
+.fundo {
+  display: 'flex';
+  flex-direction: 'column';
+  flex-wrap: 'wrap';
+  height: '95%';
+  border: '1px solid #000000ff';
+  padding: '10px';
+  border-radius: '10px';
+  background-color: var(--primary_color);   /*Cor primaria*/
+  color: var(--secondary_color);              /*Cor secundaria e da fonte*/
+}
 
 .p5 {
-  --primary_color: #e60033;
-  color: #e60033;
-  background-color:#e60033 ;
+  /* --primary_color: #e60033; */
+  color: var(--secondary_color);                      /*Cor secundaria e da fonte*/
+  background-color: var(--primary_color);           /*Cor primaria*/
   /* primary: #e60033; */
 }
 .p4 {
-  --primary_color: #ffcc00;
-  color: #ffcc00;
-  background-color:#ffcc00 ;
+  /* --primary_color: #ffcc00; */
+  color: var(--secondary_color);                      /*Cor secundaria e da fonte*/
+  background-color: var(--primary_color);           /*Cor primaria*/
   /* primary: #ffcc00; */
 }
 .p3 {
-  --primary_color: #007acc;
-  color: #007acc;
-  background-color:#007acc ;
+  /* --primary_color: #007acc; */
+  color: var(--secondary_color);                      /*Cor secundaria e da fonte*/
+  background-color: var(--primary_color);           /*Cor primaria*/
   /* primary: #007acc; */
 }
 .p6 {
-  --primary_color: #166103;
-  color: #166103;
-  background-color:#166103 ;
+  /* --primary_color: #166103; */
+  color: var(--secondary_color);                      /*Cor secundaria e da fonte*/
+  background-color: var(--primary_color);           /*Cor primaria*/
   /* primary: #33ff00; */
 
   /* https://www.reddit.com/r/Persona5/comments/c8g1ev/i_made_a_chart_showcasing_all_the_confidants_from/ */
-}
+} 

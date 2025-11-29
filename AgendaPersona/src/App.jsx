@@ -1,7 +1,7 @@
 import React from 'react';
 import 'primeicons/primeicons.css';
 // import "primereact/resources/primereact.min.css";
-// import "primereact/resources/themes/lara-light-cyan/theme.css";
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { PrimeReactProvider } from 'primereact/api';
 import Home from '../views/home';

@@ -1,0 +1,74 @@
+.schedule-container {
+  display: grid;
+  grid-template-columns: 80px auto 80px;
+  width: 100%;
+  height: 95vh;
+  border: 8px solid #d10000;
+  background: white;
+}
+
+/* Colunas laterais */
+.left-section {
+  background: #d10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 6px;
+}
+
+/* Conteúdo do meio */
+.center-section {
+  display: grid;
+  grid-template-rows: 60px auto 3px auto;
+}
+
+/* Cabeçalho dos dias */
+.days-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #d10000;
+  border-bottom: 3px solid black;
+}
+
+.header-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-right: 2px solid black;
+  color: black;
+}
+
+.header-cell:last-child {
+  border-right: none;
+}
+
+/* Conteúdo */
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.content-cell {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  background: white;
+}
+
+.content-cell:last-child {
+  border-right: none;
+}
+
+/* Divisória entre daytime e evening */
+.divider {
+  height: 3px;
+  background: black;
+}

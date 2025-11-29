@@ -20,3 +20,9 @@ Após clonar, entrar em /AgendaPersona e atualizar o node.js e rodar:
 
 `npm install`
 `npm run dev`
+
+
+## TODO:
+1. Replicar cores do P5 para os outros personas.
+2. Criar componente onde ficarão os personagens em cada dia
+3. Cortar e inserir no projeto primeiras imagens dos personagens e confidants

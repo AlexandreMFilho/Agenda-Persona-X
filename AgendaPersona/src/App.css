@@ -98,7 +98,7 @@
   --fonte_dialogo: 'Persona5Dialogue', sans-serif;
 
   background-color: var(--cor_de_fundo);
-  color: var(--cor_da_fonte);
+  color: var(--cor_da_fonte_escuro);
 }
 
 :root.p4 {
@@ -114,6 +114,10 @@
   --fonte_principal: 'Persona4Main', sans-serif;
   --fonte_especial: 'Persona4Special', sans-serif;
   --fonte_dialogo: 'Persona4Dialogue', sans-serif;
+  background-color: var(--cor_de_fundo);
+  color: var(--cor_da_fonte_escuro);
+
+
 }
 
 :root.p3 {
@@ -129,6 +133,10 @@
   --fonte_principal: 'Persona3Main', sans-serif;
   --fonte_especial: 'Persona3Special', sans-serif;
   --fonte_dialogo: 'Persona3Dialogue', sans-serif;
+  background-color: var(--cor_de_fundo);
+  color: var(--cor_da_fonte_escuro);
+
+
 }
 
 

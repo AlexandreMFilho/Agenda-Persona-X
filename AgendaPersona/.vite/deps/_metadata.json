@@ -2,7 +2,57 @@
   "hash": "a3085d47",
   "configHash": "dc6d1476",
   "lockfileHash": "5c990380",
-  "browserHash": "7d8da9e3",
-  "optimized": {},
-  "chunks": {}
+  "browserHash": "0fde2bc3",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "ee6cf509",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "5074cabd",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "053d9b1d",
+      "needsInterop": false
+    },
+    "primereact/api": {
+      "src": "../../node_modules/primereact/api/api.esm.js",
+      "file": "primereact_api.js",
+      "fileHash": "1cda0a75",
+      "needsInterop": false
+    },
+    "primereact/dropdown": {
+      "src": "../../node_modules/primereact/dropdown/dropdown.esm.js",
+      "file": "primereact_dropdown.js",
+      "fileHash": "65e17e12",
+      "needsInterop": false
+    },
+    "primereact/card": {
+      "src": "../../node_modules/primereact/card/card.esm.js",
+      "file": "primereact_card.js",
+      "fileHash": "5008b90d",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-MWWS75Q7": {
+      "file": "chunk-MWWS75Q7.js"
+    },
+    "chunk-BYNWFHQF": {
+      "file": "chunk-BYNWFHQF.js"
+    },
+    "chunk-6UPMBQC5": {
+      "file": "chunk-6UPMBQC5.js"
+    },
+    "chunk-3PPUDOJL": {
+      "file": "chunk-3PPUDOJL.js"
+    }
+  }
 }

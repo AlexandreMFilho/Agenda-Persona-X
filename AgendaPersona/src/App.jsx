@@ -4,7 +4,7 @@ import 'primeicons/primeicons.css';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { PrimeReactProvider } from 'primereact/api';
-import Home from '../views/home';z
+import Home from '../views/home';
 import { GameProvider } from './context/GameContext';
 
 

@@ -11,9 +11,9 @@
   color: #fff;
   background-color: #252525;
 }
-
-@font-face {/*Calling Card*/
-  font-family: 'Persona5';
+/*---------------------------------------------------FONTES PERSONA 5*/
+@font-face {/*Especial*/
+  font-family: 'Persona5Special';
   src: url('/src/assets/fonts/p5/Persona5MenuFontPrototype-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -26,6 +26,63 @@
   font-style: normal;
 }
 
+@font-face {/*Principal*/
+  font-family: 'Persona5Main';
+  src: url(/src/assets/fonts/p5/Markin-LT-Ultra-Bold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*---------------------------------------------------FONTES PERSONA 4*/
+@font-face {/*Especial*/
+  font-family: 'Persona4Special';
+  src: url('/src/assets/fonts/p4/MinervaModern BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {/*Dialogo*/
+  font-family: 'Persona4Dialogue';
+  src: url('/src/assets/fonts/p4/Fontsona4Golden.ttf') format('truetype');
+
+  /* src: url('/src/assets/fonts/p4/FOT-Skip Std B.otf') format('opentype'); */
+  font-weight: normal;
+  font-style: normal;
+} 
+
+@font-face {/*Principal*/
+  font-family: 'Persona4Main';
+  src: url('/src/assets/fonts/p4/Fontsona4Golden.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*---------------------------------------------------FONTES PERSONA 3*/
+@font-face {/*Especial*/
+  font-family: 'Persona3Special';
+  src: url('/src/assets/fonts/p3/BMSPA___.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {/*Dialogo*/
+  font-family: 'Persona3Dialogue';
+  src: url('/src/assets/fonts/p3/FOT-Skip Std B.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {/*Principal*/
+  font-family: 'Persona3Main';
+  src: url('/src/assets/fonts/p3/FOT-NewRodin Pro EB.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root.p6 {
+  --primary_color: #24b600;
+  --secondary_color: #072300;
+}
+
 :root.p5 {
   /* font-family: 'Persona5', sans-serif; */
 
@@ -36,9 +93,42 @@
   --cor_da_fonte_claro: #ffffff;
   --cor_da_fonte_escuro: #000000;
   --cor_de_fundo_claro: #ffffff;
+  --fonte_principal: 'Persona5Main', sans-serif;
+  --fonte_especial: 'Persona5Special', sans-serif;
+  --fonte_dialogo: 'Persona5Dialogue', sans-serif;
 
   background-color: var(--cor_de_fundo);
   color: var(--cor_da_fonte);
+}
+
+:root.p4 {
+  --primary_color: #d0a701;
+  --secondary_color: #4b3c00;
+  
+  --cor_vibrante: #ffee00;
+  --cor_de_fundo: #4b3c00;
+  --cor_da_fonte_claro: #ffffff;
+  --cor_da_fonte_claro_azul: #059db8;
+  --cor_da_fonte_escuro: #000000;
+  --cor_de_fundo_claro: #ffffff;
+  --fonte_principal: 'Persona4Main', sans-serif;
+  --fonte_especial: 'Persona4Special', sans-serif;
+  --fonte_dialogo: 'Persona4Dialogue', sans-serif;
+}
+
+:root.p3 {
+  --primary_color: #007acc;
+  --secondary_color: #002137;
+
+  --cor_vibrante: #00ffdd;
+  --cor_de_fundo: #000942;
+  --cor_da_fonte_claro: #ffffff;
+  --cor_da_fonte_claro_azul: #059db8;
+  --cor_da_fonte_escuro: #000000;
+  --cor_de_fundo_claro: #ffffff;
+  --fonte_principal: 'Persona3Main', sans-serif;
+  --fonte_especial: 'Persona3Special', sans-serif;
+  --fonte_dialogo: 'Persona3Dialogue', sans-serif;
 }
 
 
@@ -74,7 +164,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Persona5', sans-serif !important;
+  font-family: var(--fonte_especial), sans-serif !important;
 
 
 }
@@ -86,7 +176,7 @@
   border: #000000 1px solid;
   background-color: var(--cor_vibrante);
   color: var(--cor_da_fonte_escuro);
-  font-family: 'Persona5Dialogue', sans-serif !important;
+  font-family: var(--fonte_dialogo), sans-serif !important;
   font-size: 30px;
 }
 
@@ -97,23 +187,8 @@
   border: #000000 1px solid;
   background-color: var(--cor_de_fundo_claro);
   color: var(--cor_da_fonte_escuro);
-  font-family: 'Persona5Dialogue', sans-serif !important;
+  font-family: var(--fonte_principal), sans-serif !important;
 
-}
-
-:root.p6 {
-  --primary_color: #24b600;
-  --secondary_color: #072300;
-}
-
-:root.p4 {
-  --primary_color: #ffcc00;
-  --secondary_color: #4b3c00;
-}
-
-:root.p3 {
-  --primary_color: #007acc;
-  --secondary_color: #002137;
 }
 
 @media (prefers-color-scheme: light) {

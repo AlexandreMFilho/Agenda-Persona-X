@@ -12,7 +12,23 @@
   background-color: #252525;
 }
 
+@font-face {/*Calling Card*/
+  font-family: 'Persona5';
+  src: url('/src/assets/fonts/Persona5MenuFontPrototype-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {/*Dialogue*/
+  font-family: 'Persona5Dialogue';
+  src: url('/src/assets/fonts/p5hatty-1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root.p5 {
+  /* font-family: 'Persona5', sans-serif; */
+
   --primary_color: #e60033;
   --cor_vibrante: #ff0000;
   --secondary_color: #540012;
@@ -20,10 +36,11 @@
   --cor_da_fonte_claro: #ffffff;
   --cor_da_fonte_escuro: #000000;
   --cor_de_fundo_claro: #ffffff;
+
   background-color: var(--cor_de_fundo);
   color: var(--cor_da_fonte);
-
 }
+
 
 .fundoAgenda {
   height: 90vh;
@@ -31,19 +48,19 @@
   flex-direction: column;
   flex-wrap: wrap;
   background-color: var(--primary_color);
-  color: var(--cor_da_fonte);
-  border: '1px solid #000000ff';
+  color: var(--cor_da_fonte_escuro);
+  border: 1px solid #000000ff;
   
-  padding: '10px';
-  border-radius: '10px';
-  height: '95%',
+  padding: 10px;
+  border-radius: 10px;
+  /* height: 95%; */
 
 }
 
 .headerAgenda {
   width: 100%;
   background-color: var(--cor_de_fundo_claro);
-  color: var(--cor_da_fonte);
+  color: var(--cor_da_fonte_claro);
 }
 
 .timeAgenda {
@@ -51,7 +68,14 @@
   min-width: 200px;
   background-color: var(--cor_vibrante);
   color: var(--cor_da_fonte_escuro);
-  font-size: x-large;
+  font-size: 40px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Persona5', sans-serif !important;
+
 
 }
 
@@ -62,6 +86,8 @@
   border: #000000 1px solid;
   background-color: var(--cor_vibrante);
   color: var(--cor_da_fonte_escuro);
+  font-family: 'Persona5Dialogue', sans-serif !important;
+  font-size: 30px;
 }
 
 .colunaAgenda {
@@ -71,6 +97,7 @@
   border: #000000 1px solid;
   background-color: var(--cor_de_fundo_claro);
   color: var(--cor_da_fonte_escuro);
+  font-family: 'Persona5Dialogue', sans-serif !important;
 
 }
 
@@ -141,13 +168,13 @@
 }
 
 .fundo {
-  display: 'flex';
-  flex-direction: 'column';
-  flex-wrap: 'wrap';
-  height: '95%';
-  border: '1px solid #000000ff';
-  padding: '10px';
-  border-radius: '10px';
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 95%;
+  border: 1px solid #000000ff;
+  padding: 10px;
+  border-radius: 10px;
   background-color: var(--primary_color);
   /*Cor primaria*/
   color: var(--secondary_color);

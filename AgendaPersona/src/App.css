@@ -38,7 +38,7 @@
   src: url('/src/assets/fonts/p4/MinervaModern BoldItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+} 
 
 @font-face {/*Dialogo*/
   font-family: 'Persona4Dialogue';
@@ -124,7 +124,7 @@
   --cor_de_fundo: #000942;
   --cor_da_fonte_claro: #ffffff;
   --cor_da_fonte_claro_azul: #059db8;
-  --cor_da_fonte_escuro: #000000;
+  --cor_da_fonte_escuro: #02007d;
   --cor_de_fundo_claro: #ffffff;
   --fonte_principal: 'Persona3Main', sans-serif;
   --fonte_especial: 'Persona3Special', sans-serif;
@@ -164,6 +164,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  letter-spacing: 5px;
+
   font-family: var(--fonte_especial), sans-serif !important;
 
 

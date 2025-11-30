@@ -14,14 +14,14 @@
 
 @font-face {/*Calling Card*/
   font-family: 'Persona5';
-  src: url('/src/assets/fonts/Persona5MenuFontPrototype-Regular.ttf') format('truetype');
+  src: url('/src/assets/fonts/p5/Persona5MenuFontPrototype-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {/*Dialogue*/
   font-family: 'Persona5Dialogue';
-  src: url('/src/assets/fonts/p5hatty-1.ttf') format('truetype');
+  src: url('/src/assets/fonts/p5/p5hatty-1.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

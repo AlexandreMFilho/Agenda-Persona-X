@@ -11,6 +11,28 @@
   color: #fff;
   background-color: #252525;
 }
+/*---------------------------------------------------FONTES PERSONA 6*/
+@font-face {/*Especial*/
+  font-family: 'Persona6Special';
+  src: url('/src/assets/fonts/p6/DOCALLISME ON STREET.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {/*Dialogue*/
+  font-family: 'Persona6Dialogue';
+  src: url('/src/assets/fonts/p6/Urban Blocker PersonalUseOnly.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {/*Principal*/
+  font-family: 'Persona6Main';
+  src: url('/src/assets/fonts/p6/docallismeonstreet.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*---------------------------------------------------FONTES PERSONA 5*/
 @font-face {/*Especial*/
   font-family: 'Persona5Special';
@@ -81,6 +103,14 @@
 :root.p6 {
   --primary_color: #24b600;
   --secondary_color: #072300;
+  --cor_vibrante: #00ff00;
+  --cor_de_fundo: #072300;
+  --cor_da_fonte_claro: #ffffff;
+  --cor_da_fonte_escuro: #000000;
+  --cor_de_fundo_claro: #ffffff;
+  --fonte_principal: 'Persona6Main', sans-serif;
+  --fonte_especial: 'Persona6Special', sans-serif;
+  --fonte_dialogo: 'Persona6Dialogue', sans-serif;
 }
 
 :root.p5 {

@@ -28,8 +28,8 @@ const Home = () => {
             placeholder="Selecione um jogo" className="w-full md:w-14rem" checkmark={true}  highlightOnSelect={false} />
          
         </div>
-        <h4>Home</h4><RenderJSON data={agendas} />
-        <Agenda data={agendas?.[game] || []} />
+        {/* <h4>Home</h4><RenderJSON data={agendas} /> */}
+        <Agenda data={agendas?.[game] || []} game={game} />
         {/* <Agenda data={`${agendas}.${game}`} /> */}
         {/* <Rodape /> */}
       </div>

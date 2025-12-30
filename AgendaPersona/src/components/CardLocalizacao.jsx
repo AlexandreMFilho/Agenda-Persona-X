@@ -2,7 +2,7 @@ import React from 'react';
 //import do novo componente 
 import { Image } from 'primereact/image';
 // import chariot from "../assets/sprites/p5/chariot/chariot_1.png";
-import chariot from "../assets/sprites/p5/emperor/emperor_11.png";
+import chariot from "../../public/sprites/p5/chariot/chariot_1.png";
 import RenderJSON from './renderJSON';
 
 

@@ -4,6 +4,7 @@ import Divisoria from './Divisoria';
 import CardLocalizacao from './CardLocalizacao';
 import { ScrollPanel } from 'primereact/scrollpanel';
 import RenderJSON from './renderJSON';
+import ConfidantDia from './ConfidantDia';
 
 
 const Agenda = ({ data, game }) => {
@@ -12,7 +13,7 @@ const Agenda = ({ data, game }) => {
     return (
         <>
             <div style={{backgroundColor:'white'}}>
-                <h4>Agenda</h4><RenderJSON data={data} />
+                <h4>Agenda</h4><RenderJSON data={{data, game}} />
                 
                 </div>
             <button onClick={() => setVisible(!visible)}></button>
@@ -34,12 +35,12 @@ const Agenda = ({ data, game }) => {
                     <div className='timeAgenda'>Daytime</div>
                     {!visible && (
                         <>
-                            <div className='colunaAgenda'><RenderJSON data={data?.mon?.daytime} /></div>{/*Mon*/}
-                            <div className='colunaAgenda'><RenderJSON data={data?.tue?.daytime} /></div>{/*Tue*/}
-                            <div className='colunaAgenda'><RenderJSON data={data?.wed?.daytime} /></div>{/*Wed*/}
-                            <div className='colunaAgenda'><RenderJSON data={data?.thu?.daytime} /></div>{/*Thu*/}
-                            <div className='colunaAgenda'><RenderJSON data={data?.fri?.daytime} /></div>{/*Fri*/}
-                            <div className='colunaAgenda'><RenderJSON data={data?.sat?.daytime} /></div>{/*Sat*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.mon?.daytime} game={game} /></div>{/*Mon*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.tue?.daytime} game={game} /></div>{/*Tue*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.wed?.daytime} game={game} /></div>{/*Wed*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.thu?.daytime} game={game} /></div>{/*Thu*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.fri?.daytime} game={game} /></div>{/*Fri*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.sat?.daytime} game={game} /></div>{/*Sat*/}
                         </>
                     )}
                     {visible && (
@@ -57,12 +58,12 @@ const Agenda = ({ data, game }) => {
                     <div className='timeAgenda'>Evening</div>
                     {!visible && (
                         <>
-                            <div className='colunaAgenda'><RenderJSON data={data?.mon?.evening} /></div>{/*Mon*/}
-                            <div className='colunaAgenda'><RenderJSON data={data?.tue?.evening} /></div>{/*Tue*/}
-                            <div className='colunaAgenda'><RenderJSON data={data?.wed?.evening} /></div>{/*Wed*/}
-                            <div className='colunaAgenda'><RenderJSON data={data?.thu?.evening} /></div>{/*Thu*/}
-                            <div className='colunaAgenda'><RenderJSON data={data?.fri?.evening} /></div>{/*Fri*/}
-                            <div className='colunaAgenda'><RenderJSON data={data?.sat?.evening} /></div>{/*Sat*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.mon?.evening} game={game} /></div>{/*Mon*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.tue?.evening} game={game} /></div>{/*Tue*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.wed?.evening} game={game} /></div>{/*Wed*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.thu?.evening} game={game} /></div>{/*Thu*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.fri?.evening} game={game} /></div>{/*Fri*/}
+                            <div className='colunaAgenda'><ConfidantDia data={data?.sat?.evening} game={game} /></div>{/*Sat*/}
                         </>
                     )}
                     {visible && (

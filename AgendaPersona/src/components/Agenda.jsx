@@ -1,22 +1,20 @@
 import React, { useState } from 'react';
-import { useGame } from '../context/GameContext';
-
 import { Card } from 'primereact/card';
 import Divisoria from './Divisoria';
-
-
-//import do novo componente 
+import CardLocalizacao from './CardLocalizacao';
 import { ScrollPanel } from 'primereact/scrollpanel';
-import { Image } from 'primereact/image';
-// import chariot from "../assets/sprites/p5/chariot/chariot_1.png";
-import chariot from "../assets/sprites/p5/emperor/emperor_11.png";
+import RenderJSON from './renderJSON';
 
-const Agenda = ({ }) => {
+
+const Agenda = ({ data, game }) => {
     const [visible, setVisible] = useState(false);
-    const { game } = useGame();
 
     return (
         <>
+            <div style={{backgroundColor:'white'}}>
+                <h4>Agenda</h4><RenderJSON data={data} />
+                
+                </div>
             <button onClick={() => setVisible(!visible)}></button>
             <div
                 className='fundoAgenda'
@@ -32,53 +30,45 @@ const Agenda = ({ }) => {
 
                 </Divisoria>
                 <Divisoria altura={47} >
+                    {/* DAYTIME */}
                     <div className='timeAgenda'>Daytime</div>
                     {!visible && (
                         <>
-                            <div className='colunaAgenda'>1</div>
-                            <div className='colunaAgenda'>2</div>
-                            <div className='colunaAgenda'>3</div>
-                            <div className='colunaAgenda'>4</div>
-                            <div className='colunaAgenda'>5</div>
-                            <div className='colunaAgenda'>6</div>
-                        </>
-                    )}
-
-                </Divisoria>
-                <Divisoria altura={47} >
-                    <div className='timeAgenda'>Evening</div>
-                    {!visible && (
-                        <>
-                            <div className='colunaAgenda'>1</div>
-                            <div className='colunaAgenda'>2</div>
-                            <div className='colunaAgenda'>3</div>
-                            <div className='colunaAgenda'>4</div>
-                            <div className='colunaAgenda'>5</div>
-                            <div className='colunaAgenda'>6</div>
+                            <div className='colunaAgenda'><RenderJSON data={data?.mon?.daytime} /></div>{/*Mon*/}
+                            <div className='colunaAgenda'><RenderJSON data={data?.tue?.daytime} /></div>{/*Tue*/}
+                            <div className='colunaAgenda'><RenderJSON data={data?.wed?.daytime} /></div>{/*Wed*/}
+                            <div className='colunaAgenda'><RenderJSON data={data?.thu?.daytime} /></div>{/*Thu*/}
+                            <div className='colunaAgenda'><RenderJSON data={data?.fri?.daytime} /></div>{/*Fri*/}
+                            <div className='colunaAgenda'><RenderJSON data={data?.sat?.daytime} /></div>{/*Sat*/}
                         </>
                     )}
                     {visible && (
                         <>
-                            {/* <div style={{width:'250%', height:'100%', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', fontSize:'24px', fontWeight:'bold',backgroundColor:'green'}}> */}
                             <ScrollPanel style={{ width: '100%', height: '100%', backgroundColor: 'blue' }}>
-
-                                <div style={{ flexDirection: 'row', display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', width: '100%', minHeight: '100px', height: '80px', borderBottom: '1px solid black' }}>
-                                    <div style={{ display: 'flex', width: '200px', backgroundColor: 'red', height: '100%', boxSizing:'border' , justifyContent: 'center', alignItems: 'center' }}>
-                                        <img
-                                        //O quadro para criar a imagem do personagem tem que ter as medidas 123x66 no figma
-                                            src={chariot}
-                                            alt="Personagem"
-                                            className="img-thumbnail"
-                                            height='100%'
-                                        />
-                                    </div>
-                                    <div style={{ width: '100%', backgroundColor: 'white', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '16px', fontWeight: 'bold' }}>
-                                           Breve Descrição de onde achar esse personagem
-                                        
-                                        </div>
-                                </div>
+                                <CardLocalizacao time="daytime" />
+                            </ScrollPanel>
+                        </>
+                    )}
 
 
+                </Divisoria>
+                <Divisoria altura={47} >
+                    {/* EVENING */}
+                    <div className='timeAgenda'>Evening</div>
+                    {!visible && (
+                        <>
+                            <div className='colunaAgenda'><RenderJSON data={data?.mon?.evening} /></div>{/*Mon*/}
+                            <div className='colunaAgenda'><RenderJSON data={data?.tue?.evening} /></div>{/*Tue*/}
+                            <div className='colunaAgenda'><RenderJSON data={data?.wed?.evening} /></div>{/*Wed*/}
+                            <div className='colunaAgenda'><RenderJSON data={data?.thu?.evening} /></div>{/*Thu*/}
+                            <div className='colunaAgenda'><RenderJSON data={data?.fri?.evening} /></div>{/*Fri*/}
+                            <div className='colunaAgenda'><RenderJSON data={data?.sat?.evening} /></div>{/*Sat*/}
+                        </>
+                    )}
+                    {visible && (
+                        <>
+                            <ScrollPanel style={{ width: '100%', height: '100%', backgroundColor: 'blue' }}>
+                                <CardLocalizacao time="evening" />
                             </ScrollPanel>
                             {/* </div> */}
                         </>

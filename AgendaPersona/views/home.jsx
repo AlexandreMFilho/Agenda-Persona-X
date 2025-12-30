@@ -3,9 +3,11 @@ import { useGame } from '../src/context/GameContext';
 import Agenda from '../src/components/Agenda';
 
 import { Dropdown } from 'primereact/dropdown';
+import RenderJSON from '../src/components/renderJSON';
         
 const Home = () => {
-  const { game, chooseGame } = useGame();
+  const { game, chooseGame, agendas } = useGame();
+
   useEffect(() => {
     document.documentElement.className = `${game} `;
   }, [game]);
@@ -26,7 +28,9 @@ const Home = () => {
             placeholder="Selecione um jogo" className="w-full md:w-14rem" checkmark={true}  highlightOnSelect={false} />
          
         </div>
-        <Agenda />
+        <h4>Home</h4><RenderJSON data={agendas} />
+        <Agenda data={agendas?.[game] || []} />
+        {/* <Agenda data={`${agendas}.${game}`} /> */}
         {/* <Rodape /> */}
       </div>
     </>

@@ -5,34 +5,34 @@ export default {
                 daytime: [
                     {
                         "name": "chariot",
-                        "description": "A powerful leader who commands respect and authority.",
+                        "descricao": "A powerful leader who commands respect and authority.",
                         "image": "/assets/sprites/p5/chariot/chariot_1.png"
                     },
                     {
                         "name": "hierophant",
-                        "description": "A spiritual guide who embodies tradition and wisdom.",
+                        "descricao": "A spiritual guide who embodies tradition and wisdom.",
                         "image": "/assets/sprites/p5/hierophant/hierophant_1.png"
                     },
                     {
                         "name": "lovers",
-                        "description": "A symbol of love, harmony, and relationships.",
+                        "descricao": "A symbol of love, harmony, and relationships.",
                         "image": "/assets/sprites/p5/lovers/lovers_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "emperor",
-                        "description": "A powerful leader who commands respect and authority.",
+                        "descricao": "A powerful leader who commands respect and authority.",
                         "image": "/assets/sprites/p5/emperor/emperor_11.png"
                     },
                     {
                         "name": "hierophant",
-                        "description": "A spiritual guide who embodies tradition and wisdom.",
+                        "descricao": "A spiritual guide who embodies tradition and wisdom.",
                         "image": "/assets/sprites/p5/hierophant/hierophant_1.png"
                     },
                     {
                         "name": "lovers",
-                        "description": "A symbol of love, harmony, and relationships.",
+                        "descricao": "A symbol of love, harmony, and relationships.",
                         "image": "/assets/sprites/p5/lovers/lovers_1.png"
                     }
                 ]
@@ -41,14 +41,14 @@ export default {
                 daytime: [
                     {
                         "name": "chariot",
-                        "description": "A card representing determination and willpower.",
+                        "descricao": "A card representing determination and willpower.",
                         "image": "/assets/sprites/p5/chariot/chariot_2.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "tower",
-                        "description": "A card symbolizing sudden change and upheaval.",
+                        "descricao": "A card symbolizing sudden change and upheaval.",
                         "image": "/assets/sprites/p5/tower/tower_1.png"
                     }
                 ]
@@ -57,14 +57,14 @@ export default {
                 daytime: [
                     {
                         "name": "star",
-                        "description": "A card representing hope and inspiration.",
+                        "descricao": "A card representing hope and inspiration.",
                         "image": "/assets/sprites/p5/star/star_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "moon",
-                        "description": "A card symbolizing intuition and the subconscious.",
+                        "descricao": "A card symbolizing intuition and the subconscious.",
                         "image": "/assets/sprites/p5/moon/moon_1.png"
                     }
                 ]
@@ -73,14 +73,14 @@ export default {
                 daytime: [
                     {
                         "name": "hermit",
-                        "description": "A card representing introspection and inner guidance.",
+                        "descricao": "A card representing introspection and inner guidance.",
                         "image": "/assets/sprites/p5/hermit/hermit_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "fortune",
-                        "description": "A card symbolizing destiny and cycles of life.",
+                        "descricao": "A card symbolizing destiny and cycles of life.",
                         "image": "/assets/sprites/p5/wheel/wheel_1.png"
                     }
                 ]
@@ -89,14 +89,14 @@ export default {
                 daytime: [
                     {
                         "name": "magician",
-                        "description": "A card representing skill, resourcefulness, and power.",
+                        "descricao": "A card representing skill, resourcefulness, and power.",
                         "image": "/assets/sprites/p5/magician/magician_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "fool",
-                        "description": "A card symbolizing new beginnings and taking risks.",
+                        "descricao": "A card symbolizing new beginnings and taking risks.",
                         "image": "/assets/sprites/p5/fool/fool_1.png"
                     }
                 ]
@@ -105,14 +105,14 @@ export default {
                 daytime: [
                     {
                         "name": "sun",
-                        "description": "A card representing joy, success, and positivity.",
+                        "descricao": "A card representing joy, success, and positivity.",
                         "image": "/assets/sprites/p5/sun/sun_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "priestess",
-                        "description": "A card symbolizing completion and fulfillment.",
+                        "descricao": "A card symbolizing completion and fulfillment.",
                         "image": "/assets/sprites/p5/priestess/priestess_1.png"
                     }
                 ]
@@ -123,19 +123,19 @@ export default {
                 daytime: [
                     {
                         "name": "empress",
-                        "description": "A card representing creativity and abundance.",
+                        "descricao": "A card representing creativity and abundance.",
                         "image": "/assets/sprites/p4/empress/empress_1.png"
                     },
                     {
                         "name": "priestess",
-                        "description": "A card symbolizing wisdom and mystery.",
+                        "descricao": "A card symbolizing wisdom and mystery.",
                         "image": "/assets/sprites/p4/priestess/priestess_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "devil",
-                        "description": "A card representing bondage and temptation.",
+                        "descricao": "A card representing bondage and temptation.",
                         "image": "/assets/sprites/p4/devil/devil_1.png"
                     }
                 ]
@@ -144,14 +144,14 @@ export default {
                 daytime: [
                     {
                         "name": "hanged_man",
-                        "description": "A card representing suspension and letting go.",
+                        "descricao": "A card representing suspension and letting go.",
                         "image": "/assets/sprites/p4/hanged/hanged_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "death",
-                        "description": "A card symbolizing transformation and rebirth.",
+                        "descricao": "A card symbolizing transformation and rebirth.",
                         "image": "/assets/sprites/p4/death/death_1.png"
                     }
                 ]
@@ -160,14 +160,14 @@ export default {
                 daytime: [
                     {
                         "name": "temperance",
-                        "description": "A card representing balance and moderation.",
+                        "descricao": "A card representing balance and moderation.",
                         "image": "/assets/sprites/p4/temperance/temperance_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "justice",
-                        "description": "A card symbolizing fairness and truth.",
+                        "descricao": "A card symbolizing fairness and truth.",
                         "image": "/assets/sprites/p4/justice/justice_1.png"
                     }
                 ]
@@ -176,14 +176,14 @@ export default {
                 daytime: [
                     {
                         "name": "strength",
-                        "description": "A card representing inner strength and courage.",
+                        "descricao": "A card representing inner strength and courage.",
                         "image": "/assets/sprites/p4/strength/strength_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "lovers",
-                        "description": "A symbol of love, harmony, and relationships.",
+                        "descricao": "A symbol of love, harmony, and relationships.",
                         "image": "/assets/sprites/p4/lovers/lovers_1.png"
                     }
                 ]
@@ -192,14 +192,14 @@ export default {
                 daytime: [
                     {
                         "name": "hermit",
-                        "description": "A card representing spirituality and faith.",
+                        "descricao": "A card representing spirituality and faith.",
                         "image": "/assets/sprites/p4/hermit/hermit_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "magician",
-                        "description": "A card symbolizing manifestation and resourcefulness.",
+                        "descricao": "A card symbolizing manifestation and resourcefulness.",
                         "image": "/assets/sprites/p4/magician/magician_1.png"
                     }
                 ]
@@ -208,14 +208,14 @@ export default {
                 daytime: [
                     {
                         "name": "hermit",
-                        "description": "A card representing solitude and inner search.",
+                        "descricao": "A card representing solitude and inner search.",
                         "image": "/assets/sprites/p4/hermit/hermit_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "fool",
-                        "description": "A card symbolizing spontaneity and freedom.",
+                        "descricao": "A card symbolizing spontaneity and freedom.",
                         "image": "/assets/sprites/p4/fool/fool_1.png"
                     }
                 ]
@@ -226,14 +226,14 @@ export default {
                 daytime: [
                     {
                         "name": "magician",
-                        "description": "A card representing power and resourcefulness.",
+                        "descricao": "A card representing power and resourcefulness.",
                         "image": "/assets/sprites/p5/magician/magician_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "empress",
-                        "description": "A card representing femininity and abundance.",
+                        "descricao": "A card representing femininity and abundance.",
                         "image": "/assets/sprites/p5/empress/empress_1.png"
                     }
                 ]
@@ -242,14 +242,14 @@ export default {
                 daytime: [
                     {
                         "name": "emperor",
-                        "description": "A card representing authority and leadership.",
+                        "descricao": "A card representing authority and leadership.",
                         "image": "/assets/sprites/p5/emperor/emperor_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "hierophant",
-                        "description": "A card representing tradition and convention.",
+                        "descricao": "A card representing tradition and convention.",
                         "image": "/assets/sprites/p5/hierophant/hierophant_1.png"
                     }
                 ]
@@ -258,14 +258,14 @@ export default {
                 daytime: [
                     {
                         "name": "lovers",
-                        "description": "A card representing choices and relationships.",
+                        "descricao": "A card representing choices and relationships.",
                         "image": "/assets/sprites/p5/lovers/lovers_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "chariot",
-                        "description": "A card representing control and determination.",
+                        "descricao": "A card representing control and determination.",
                         "image": "/assets/sprites/p5/chariot/chariot_1.png"
                     }
                 ]
@@ -274,14 +274,14 @@ export default {
                 daytime: [
                     {
                         "name": "strength",
-                        "description": "A card representing courage and compassion.",
+                        "descricao": "A card representing courage and compassion.",
                         "image": "/assets/sprites/p5/strength/strength_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "hermit",
-                        "description": "A card representing wisdom and introspection.",
+                        "descricao": "A card representing wisdom and introspection.",
                         "image": "/assets/sprites/p5/hermit/hermit_1.png"
                     }
                 ]
@@ -290,14 +290,14 @@ export default {
                 daytime: [
                     {
                         "name": "fortune",
-                        "description": "A card representing luck and cycles.",
+                        "descricao": "A card representing luck and cycles.",
                         "image": "/assets/sprites/p5/wheel/wheel_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "justice",
-                        "description": "A card representing balance and fairness.",
+                        "descricao": "A card representing balance and fairness.",
                         "image": "/assets/sprites/p5/justice/justice_1.png"
                     }
                 ]
@@ -306,14 +306,14 @@ export default {
                 daytime: [
                     {
                         "name": "hanged_man",
-                        "description": "A card representing pause and contemplation.",
+                        "descricao": "A card representing pause and contemplation.",
                         "image": "/assets/sprites/p5/hanged/hanged_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "death",
-                        "description": "A card representing transformation and renewal.",
+                        "descricao": "A card representing transformation and renewal.",
                         "image": "/assets/sprites/p5/death/death_1.png"
                     }
                 ]
@@ -324,14 +324,14 @@ export default {
                 daytime: [
                     {
                         "name": "temperance",
-                        "description": "A card representing harmony and patience.",
+                        "descricao": "A card representing harmony and patience.",
                         "image": "/assets/sprites/p6/temperance/temperance_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "devil",
-                        "description": "A card representing shadow self and limitations.",
+                        "descricao": "A card representing shadow self and limitations.",
                         "image": "/assets/sprites/p6/devil/devil_1.png"
                     }
                 ]
@@ -340,14 +340,14 @@ export default {
                 daytime: [
                     {
                         "name": "tower",
-                        "description": "A card representing sudden revelation.",
+                        "descricao": "A card representing sudden revelation.",
                         "image": "/assets/sprites/p6/tower/tower_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "star",
-                        "description": "A card representing hope and clarity.",
+                        "descricao": "A card representing hope and clarity.",
                         "image": "/assets/sprites/p6/star/star_1.png"
                     }
                 ]
@@ -356,14 +356,14 @@ export default {
                 daytime: [
                     {
                         "name": "moon",
-                        "description": "A card representing dreams and illusions.",
+                        "descricao": "A card representing dreams and illusions.",
                         "image": "/assets/sprites/p6/moon/moon_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "sun",
-                        "description": "A card representing joy and enlightenment.",
+                        "descricao": "A card representing joy and enlightenment.",
                         "image": "/assets/sprites/p6/sun/sun_1.png"
                     }
                 ]
@@ -372,14 +372,14 @@ export default {
                 daytime: [
                     {
                         "name": "judgement",
-                        "description": "A card representing awakening and renewal.",
+                        "descricao": "A card representing awakening and renewal.",
                         "image": "/assets/sprites/p6/judgement/judgement_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "world",
-                        "description": "A card representing wholeness and fulfillment.",
+                        "descricao": "A card representing wholeness and fulfillment.",
                         "image": "/assets/sprites/p6/world/world_1.png"
                     }
                 ]
@@ -388,14 +388,14 @@ export default {
                 daytime: [
                     {
                         "name": "fool",
-                        "description": "A card representing new journeys and optimism.",
+                        "descricao": "A card representing new journeys and optimism.",
                         "image": "/assets/sprites/p6/fool/fool_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "priestess",
-                        "description": "A card representing hidden knowledge and intuition.",
+                        "descricao": "A card representing hidden knowledge and intuition.",
                         "image": "/assets/sprites/p6/priestess/priestess_1.png"
                     }
                 ]
@@ -404,14 +404,14 @@ export default {
                 daytime: [
                     {
                         "name": "empress",
-                        "description": "A card representing growth and beauty.",
+                        "descricao": "A card representing growth and beauty.",
                         "image": "/assets/sprites/p6/empress/empress_1.png"
                     }
                 ],
                 evening: [
                     {
                         "name": "emperor",
-                        "description": "A card representing power and stability.",
+                        "descricao": "A card representing power and stability.",
                         "image": "/assets/sprites/p6/emperor/emperor_1.png"
                     }
                 ]

@@ -3,10 +3,10 @@ import RenderJSON from './renderJSON';
 import chariot from "../../public/sprites/p3/chariot/chariot_1.png";
 
 
-export default function ConfidantDia({ data, game}) {
+export default function ConfidantDia({ data, game,  }) {
     return (
         <>
-            <RenderJSON data={data} />
+            {/* <RenderJSON data={data} /> */}
             {data && data.map((item, index) => (
                 <div>
                     {/* <p key={index}>{item?.name}</p> */}

@@ -16,10 +16,7 @@ const Home = () => {
 
   return (
     <>
-      <div style={{ width: '100vh', height: '100vh', padding: '20px' }}
-        // className={`${game}`}
-      >
-
+      <div className='home'>
         {/* <Cabecalho /> */}
         {/* <h1>Welcome to Agenda {game}</h1> */}
         <div className={`${game}`}>

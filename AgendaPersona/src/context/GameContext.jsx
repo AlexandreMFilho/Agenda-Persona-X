@@ -18,7 +18,7 @@ export const GameProvider = ({ children }) => {
 
     const chooseGame = (selectedGame) => {
         setGame(selectedGame);
-        setAgendas(MockAgenda.agendas[selectedGame]);
+        // setAgendas(MockAgenda.agendas[selectedGame]);
     };
 
     return (

@@ -18,11 +18,13 @@ export const GameProvider = ({ children }) => {
 
     const chooseGame = (selectedGame) => {
         setGame(selectedGame);
+        setAgendas(MockAgenda.agendas[selectedGame]);
     };
 
     return (
         <GameContext.Provider value={{ 
                 game,
+                setGame,
                 agendas,
                 chooseGame,
             }}>

@@ -323,64 +323,64 @@ export default {
             mon: {
                 daytime: [
                     {
-                        "name": "temperance",
-                        "descricao": "A card representing harmony and patience.",
-                        "image": "/assets/sprites/p6/temperance/temperance_1.png"
+                        "name": "fool",
+                        "descricao": "A card representing new beginnings and optimism.",
+                        "image": "/assets/sprites/p6/fool/fool_1.png"
                     }
                 ],
                 evening: [
                     {
-                        "name": "devil",
-                        "descricao": "A card representing shadow self and limitations.",
-                        "image": "/assets/sprites/p6/devil/devil_1.png"
+                        "name": "chariot",
+                        "descricao": "A card representing control and determination.",
+                        "image": "/assets/sprites/p6/chariot/chariot_1.png"
                     }
                 ]
             },
             tue: {
                 daytime: [
                     {
-                        "name": "tower",
-                        "descricao": "A card representing sudden revelation.",
-                        "image": "/assets/sprites/p6/tower/tower_1.png"
+                        "name": "fool",
+                        "descricao": "A card representing new beginnings and optimism.",
+                        "image": "/assets/sprites/p6/fool/fool_1.png"
                     }
                 ],
                 evening: [
                     {
-                        "name": "star",
-                        "descricao": "A card representing hope and clarity.",
-                        "image": "/assets/sprites/p6/star/star_1.png"
+                        "name": "chariot",
+                        "descricao": "A card representing control and determination.",
+                        "image": "/assets/sprites/p6/chariot/chariot_1.png"
                     }
                 ]
             },
             wed: {
                 daytime: [
                     {
-                        "name": "moon",
-                        "descricao": "A card representing dreams and illusions.",
-                        "image": "/assets/sprites/p6/moon/moon_1.png"
+                        "name": "fool",
+                        "descricao": "A card representing new beginnings and optimism.",
+                        "image": "/assets/sprites/p6/fool/fool_1.png"
                     }
                 ],
                 evening: [
                     {
-                        "name": "sun",
-                        "descricao": "A card representing joy and enlightenment.",
-                        "image": "/assets/sprites/p6/sun/sun_1.png"
+                        "name": "chariot",
+                        "descricao": "A card representing control and determination.",
+                        "image": "/assets/sprites/p6/chariot/chariot_1.png"
                     }
                 ]
             },
             thu: {
                 daytime: [
                     {
-                        "name": "judgement",
-                        "descricao": "A card representing awakening and renewal.",
-                        "image": "/assets/sprites/p6/judgement/judgement_1.png"
+                        "name": "fool",
+                        "descricao": "A card representing new beginnings and optimism.",
+                        "image": "/assets/sprites/p6/fool/fool_1.png"
                     }
                 ],
                 evening: [
                     {
-                        "name": "world",
-                        "descricao": "A card representing wholeness and fulfillment.",
-                        "image": "/assets/sprites/p6/world/world_1.png"
+                        "name": "chariot",
+                        "descricao": "A card representing control and determination.",
+                        "image": "/assets/sprites/p6/chariot/chariot_1.png"
                     }
                 ]
             },
@@ -388,31 +388,31 @@ export default {
                 daytime: [
                     {
                         "name": "fool",
-                        "descricao": "A card representing new journeys and optimism.",
+                        "descricao": "A card representing new beginnings and optimism.",
                         "image": "/assets/sprites/p6/fool/fool_1.png"
                     }
                 ],
                 evening: [
                     {
-                        "name": "priestess",
-                        "descricao": "A card representing hidden knowledge and intuition.",
-                        "image": "/assets/sprites/p6/priestess/priestess_1.png"
+                        "name": "chariot",
+                        "descricao": "A card representing control and determination.",
+                        "image": "/assets/sprites/p6/chariot/chariot_1.png"
                     }
                 ]
             },
             sat: {
                 daytime: [
                     {
-                        "name": "empress",
-                        "descricao": "A card representing growth and beauty.",
-                        "image": "/assets/sprites/p6/empress/empress_1.png"
+                        "name": "fool",
+                        "descricao": "A card representing new beginnings and optimism.",
+                        "image": "/assets/sprites/p6/fool/fool_1.png"
                     }
                 ],
                 evening: [
                     {
-                        "name": "emperor",
-                        "descricao": "A card representing power and stability.",
-                        "image": "/assets/sprites/p6/emperor/emperor_1.png"
+                        "name": "chariot",
+                        "descricao": "A card representing control and determination.",
+                        "image": "/assets/sprites/p6/chariot/chariot_1.png"
                     }
                 ]
             }

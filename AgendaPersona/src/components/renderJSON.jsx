@@ -8,7 +8,7 @@ export default function RenderJSON({ data }) {
 
     return (
         <>
-            <button onClick={abrirModal}>Exibir</button>
+            <button style={{backgroundColor: '#007acc', color: '#fff'}}  onClick={abrirModal}>Exibir</button>
             <dialog ref={dialogRef} style={{
                 position: 'fixed',
                 bottom: '0',
@@ -16,7 +16,7 @@ export default function RenderJSON({ data }) {
                 margin: '0',
                 borderRadius: '4px 4px 0 0'
             }}>
-                <button onClick={fecharModal}>Fechar</button>
+                <button style={{backgroundColor: '#007acc', color: '#fff'}}onClick={fecharModal}>Fechar</button>
                 <section className="render-json-content">
                     <pre style={{ 
                         whiteSpace: 'pre-wrap', 

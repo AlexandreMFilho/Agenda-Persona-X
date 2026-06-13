@@ -70,14 +70,14 @@ const Agenda = ({ data, game }) => {
                 ))}
             </div>
             <Button 
-            label="Adicionar Compromisso +" 
-            onClick={() => setModalVisible(true)} 
-            className="BotaoCriarCompromisso"
+                label="Adicionar Compromisso +" 
+                onClick={() => setModalVisible(true)} 
+                className="BotaoCriarCompromisso"
             />
             <div>
                 {modalVisible && (
                     <>
-                        <Dialog header="Header" visible={modalVisible} style={{ width: '50vw' }} onHide={() => { if (!modalVisible) return; setModalVisible(false); }}>
+                        <Dialog header="Adicionar Compromisso" visible={modalVisible} style={{ width: '50vw' }} onHide={() => { if (!modalVisible) return; setModalVisible(false); }}>
                             <p className="m-0">
                                 MODAL
                             </p>

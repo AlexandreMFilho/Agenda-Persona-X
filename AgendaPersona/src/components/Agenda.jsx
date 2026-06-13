@@ -4,22 +4,25 @@ import CardLocalizacao from './CardLocalizacao';
 import { ScrollPanel } from 'primereact/scrollpanel';
 import RenderJSON from './renderJSON';
 import ConfidantDia from './ConfidantDia';
+import { Dialog } from 'primereact/dialog';
+import { Button } from 'primereact/button';
 
 
 const Agenda = ({ data, game }) => {
     const [visible, setVisible] = useState(false);
+    const [modalVisible, setModalVisible] = useState(false);
     const [DiaSelecionado, setDiaSelecionado] = useState(null);
     const DIAS = [
-        {label:'Mon', value:'mon'},
-        {label:'Tue', value:'tue'},
-        {label:'Wed', value:'wed'},
-        {label:'Thu', value:'thu'},
-        {label:'Fri', value:'fri'},
-        {label:'Sat', value:'sat'}
+        { label: 'Mon', value: 'mon' },
+        { label: 'Tue', value: 'tue' },
+        { label: 'Wed', value: 'wed' },
+        { label: 'Thu', value: 'thu' },
+        { label: 'Fri', value: 'fri' },
+        { label: 'Sat', value: 'sat' }
     ];
     const TIMES = [
-        {label:'Daytime', value:'daytime'},
-        {label:'Evening', value:'evening'}
+        { label: 'Daytime', value: 'daytime' },
+        { label: 'Evening', value: 'evening' }
     ];
 
     const handleClickDia = (dia) => {
@@ -30,7 +33,7 @@ const Agenda = ({ data, game }) => {
     return (
         <>
             {/* DIV PARA DEBUG com o RenderJSON*/}
-            <div style={{backgroundColor:'white'}}>
+            <div style={{ backgroundColor: 'white' }}>
                 {/* <h4>Agenda</h4><RenderJSON data={{data, game}} /> */}
             </div>
 
@@ -46,14 +49,14 @@ const Agenda = ({ data, game }) => {
 
                 </Divisoria>
 
-                {TIMES.map((time)=>(
+                {TIMES.map((time) => (
                     <Divisoria altura={47} >
                         <div className='timeAgenda'>{time.label}</div>
                         {!visible && (
                             <>
-                               {DIAS.map((dia)=>(
-                                <div className='colunaAgenda' onClick={() => handleClickDia(dia.value)}><ConfidantDia data={data?.[dia.value]?.[time.value]} game={game} /></div>    
-                                ))} 
+                                {DIAS.map((dia) => (
+                                    <div className='colunaAgenda' onClick={() => handleClickDia(dia.value)}><ConfidantDia data={data?.[dia.value]?.[time.value]} game={game} /></div>
+                                ))}
                             </>
                         )}
                         {visible && (
@@ -64,7 +67,25 @@ const Agenda = ({ data, game }) => {
                             </>
                         )}
                     </Divisoria>
-                ))} 
+                ))}
+            </div>
+            <Button 
+            label="Adicionar Compromisso +" 
+            onClick={() => setModalVisible(true)} 
+            className="BotaoCriarCompromisso"
+            />
+            <div>
+                {modalVisible && (
+                    <>
+                        <Dialog header="Header" visible={modalVisible} style={{ width: '50vw' }} onHide={() => { if (!modalVisible) return; setModalVisible(false); }}>
+                            <p className="m-0">
+                                MODAL
+                            </p>
+                        </Dialog>
+
+                    </>
+                )}
+
             </div>
 
         </>

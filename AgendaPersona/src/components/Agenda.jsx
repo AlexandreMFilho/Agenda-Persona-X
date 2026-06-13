@@ -10,7 +10,8 @@ import { Button } from 'primereact/button';
 
 const Agenda = ({ data, game }) => {
     const [visible, setVisible] = useState(false);
-    const [modalVisible, setModalVisible] = useState(false);
+    const [modalCompromissoVisible, setModalCompromissoVisible] = useState(false);
+    const [modalSpecVisible, setModalSpecVisible] = useState(false);
     const [DiaSelecionado, setDiaSelecionado] = useState(null);
     const DIAS = [
         { label: 'Mon', value: 'mon' },
@@ -62,7 +63,7 @@ const Agenda = ({ data, game }) => {
                         {visible && (
                             <>
                                 <ScrollPanel className='scrollPanelAgenda' onClick={() => setVisible(false)}>
-                                    <CardLocalizacao time={time.value} dia={DiaSelecionado} data={data?.[DiaSelecionado]?.[time.value]} game={game} />
+                                    <CardLocalizacao time={time.value} dia={DiaSelecionado} data={data?.[DiaSelecionado]?.[time.value]} game={game} moreClick={setModalSpecVisible}/>
                                 </ScrollPanel>
                             </>
                         )}
@@ -71,13 +72,13 @@ const Agenda = ({ data, game }) => {
             </div>
             <Button 
                 label="Adicionar Compromisso +" 
-                onClick={() => setModalVisible(true)} 
+                onClick={() => setModalCompromissoVisible(true)} 
                 className="BotaoCriarCompromisso"
             />
             <div>
-                {modalVisible && (
+                {modalCompromissoVisible && (
                     <>
-                        <Dialog header="Adicionar Compromisso" visible={modalVisible} style={{ width: '50vw' }} onHide={() => { if (!modalVisible) return; setModalVisible(false); }}>
+                        <Dialog header="Adicionar Compromisso" visible={modalCompromissoVisible} style={{ width: '50vw' }} onHide={() => { if (!modalCompromissoVisible) return; setModalCompromissoVisible(false); }}>
                             <p className="m-0">
                                 MODAL
                             </p>
@@ -85,6 +86,18 @@ const Agenda = ({ data, game }) => {
 
                     </>
                 )}
+
+                {modalSpecVisible && (
+                    <>
+                        <Dialog header="Especificações" visible={modalSpecVisible} style={{ width: '50vw' }} onHide={() => { if (!modalSpecVisible) return; setModalSpecVisible(false); }}>
+                            <p className="m-0">
+                                MODAL
+                            </p>
+                        </Dialog>
+
+                    </>
+                )}
+
 
             </div>
 

@@ -1,4 +1,5 @@
-export default function CardLocalizacao({ data, time, dia, onClick, game }) {
+import { Button } from 'primereact/button';
+export default function CardLocalizacao({ data, time, dia, onClick, game, moreClick}) {
     return (
         <>
             {data && data.map((item, index) => (
@@ -14,6 +15,8 @@ export default function CardLocalizacao({ data, time, dia, onClick, game }) {
                     </div>
                     <div onClick={onClick} className='descricaoCardComLocalizacao'>
                         {item?.descricao}
+                        <Button label="Ver Detalhes" onClick={moreClick} style={{ margin: '10px' }} />
+                        
 
                     </div>
                 </div>

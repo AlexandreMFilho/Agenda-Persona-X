@@ -11,6 +11,29 @@
   color: #fff;
   background-color: #252525;
 }
+
+/*---------------------------------------------------FONTES PERSONA 6*/
+@font-face {/*Especial*/
+  font-family: 'Persona6Special';
+  src: url('/src/assets/fonts/p6/Alterous Text Preview.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {/*Dialogue*/
+  font-family: 'Persona6Dialogue';
+  src: url('/src/assets/fonts/p6/Alterous Display Preview.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {/*Principal*/
+  font-family: 'Persona6EMain';
+  src: url('/src/assets/fonts/p6/Alterous Text Preview.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*---------------------------------------------------FONTES PERSONA 5*/
 @font-face {/*Especial*/
   font-family: 'Persona5Special';
@@ -82,6 +105,23 @@
   --primary_color: #24b600;
   --secondary_color: #072300;
 }
+:root.p6 {
+  /* font-family: 'Persona6, sans-serif; */
+
+  --primary_color: #018617;
+  --cor_vibrante: #15e30b;
+  --secondary_color: #052c14;
+  --cor_de_fundo: #025805;
+  --cor_da_fonte_claro: #ffffff;
+  --cor_da_fonte_escuro: #000000;
+  --cor_de_fundo_claro: #ffffff;
+  --fonte_principal: 'Persona6Special', sans-serif;
+  --fonte_especial: 'Persona6Special', sans-serif;
+  --fonte_dialogo: 'Persona6Special', sans-serif;
+
+  background-color: var(--cor_de_fundo);
+  color: var(--cor_da_fonte_escuro);
+}
 
 :root.p5 {
   /* font-family: 'Persona5', sans-serif; */
@@ -139,7 +179,11 @@
 
 }
 
-
+.home {
+  width: 80vw;
+  height: 100vh;
+  padding: 20px;  
+}
 .fundoAgenda {
   height: 90vh;
   display: flex;
@@ -162,7 +206,6 @@
 }
 
 .timeAgenda {
-  width: 100%;
   min-width: 200px;
   background-color: var(--cor_vibrante);
   color: var(--cor_da_fonte_escuro);
@@ -265,5 +308,55 @@
   color: var(--secondary_color);
   /*Cor secundaria e da fonte*/
 }
+.scrollPanelAgenda {
+  width: 100%;
+  height: 100%;
+}
+.cardLocalizacaoExterno{
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100px;
+  height: 80px;
+  border-bottom: 1px solid black;
+}
+.cardLocalizacaoInterno{
+  display: flex;
+  width: 200px;
+  height: 100%;
+  box-sizing: border;
+  justify-content: center;
+  align-items: center;
+}
+.cardLocalizacaoImg{
+  width: 100%;
+}
+.descricaoCardComLocalizacao{
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight:bold;
+}
 
+.ConfidantDiaImg{
+   padding:0px;
+   margin:0px;
+   gap:0px;
+}
 /* https://www.reddit.com/r/Persona5/comments/c8g1ev/i_made_a_chart_showcasing_all_the_confidants_from/ */
+
+.BotaoCriarCompromisso{
+  margin-left: 1450px;
+  margin-top:-100px;
+  height: 100px;
+  min-width: 100px;
+  border-radius: 30%; 
+  background-color: var(--cor_vibrante);
+  color: var(--cor_secundaria);
+}

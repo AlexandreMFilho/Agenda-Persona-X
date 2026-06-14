@@ -1,0 +1,68 @@
+# Correções
+
+1. Corrigir todos os caminhos de imagem
+
+* CardLocalizacao                        
+    * `src={`/sprites/${game}/${item?.name}/${item?.name}_1.png`}`
+* ConfidantDia
+    * `src={`/sprites/${game}/${item?.name}/${item?.name}_1.png`}`
+
+
+2.  Adicionar setGame ao Context
+    ```
+     <GameContext.Provider value={{ 
+                game,
+                setGame,
+                agendas,
+                chooseGame,
+            }}>
+            {children}
+        </GameContext.Provider>
+    ```
+
+3. Eliminar duplicação em Agenda.jsx
+
+    ```
+        const DIAS = [
+        {label:'Mon', value:'mon'},
+        {label:'Tue', value:'tue'},
+        {label:'Wed', value:'wed'},
+        {label:'Thu', value:'thu'},
+        {label:'Fri', value:'fri'},
+        {label:'Sat', value:'sat'}
+    ];
+    const TIMES = [
+        {label:'Daytime', value:'daytime'},
+        {label:'Evening', value:'evening'}
+    ];
+
+     {TIMES.map((time)=>(
+                    <Divisoria altura={47} >
+                        <div className='timeAgenda'>{time.label}</div>
+                        {!visible && (
+                            <>
+                               {DIAS.map((dia)=>(
+                                <div className='colunaAgenda' onClick={() => handleClickDia(dia.value)}><ConfidantDia data={data?.[dia.value]?.[time.value]} game={game} /></div>    
+                                ))} 
+                            </>
+                        )}
+                        {visible && (
+                            <>
+                                <ScrollPanel style={{ width: '100%', height: '100%' }} onClick={() => setVisible(false)}>
+                                    <CardLocalizacao time={time.value} dia={DiaSelecionado} data={data?.[DiaSelecionado]?.[time.value]} game={game} />
+                                </ScrollPanel>
+                            </>
+                        )}
+                    </Divisoria>
+                ))} 
+    ```
+
+4. Extrair inline styles para CSS
+
+. Agenda: Style inline removido (scrollPanelAgenda)
+. CardLocalizacao: Style inline removido (cardLocalizacaoExterno, cardLocalizacaoInterno, cardLocalizacaoImg, descricaoCardComLocalizacao)
+. ConfidantDia: Style inline removido (ConfidantDiaImg)
+. Home: Style inline removido (home)
+
+
+
